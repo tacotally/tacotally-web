@@ -146,7 +146,7 @@
 return [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]           
         }
 
-        var socket = io('http://tacotally-server.adie.io');
+        var socket = io('https://tacotally-server.adie.io');
         socket.on('taco', function (data) {
             console.log(data);
             tacoPoints.push(new google.maps.LatLng(data.lat, data.long));
